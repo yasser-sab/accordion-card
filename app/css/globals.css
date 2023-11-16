@@ -1,0 +1,53 @@
+html {
+	font-size: var(--font-size,75%);
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-name,'Kumbh Sans'), sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background:linear-gradient(
+		to bottom ,
+		var(--soft-violet),
+		var(--soft-blue)
+	);
+}
+
+p {
+	margin: 0;
+	font-size: 13px;
+}
+
+p, h3 {
+	color: var(--dark-grayish-blue,hsl(240, 6%, 50%));
+}
+
+h1, h3 {
+	margin-top:0; 
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 27px;
+	color: var(--very-dark-desaturated-blue);
+}
+
+.open img {
+	transform:rotate(180deg);
+}
+.open .answer {
+	display: block;
+}
+.open h3{
+	color: var(--very-dark-desaturated-blue);
+}
